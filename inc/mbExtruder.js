@@ -149,7 +149,7 @@ jQuery.browser.mobile = jQuery.browser.android || jQuery.browser.blackberry || j
 					$.metadata.setType("class");
 					if (extruder.metadata().title) extruder.attr("extTitle",extruder.metadata().title);
 					if (extruder.metadata().url) extruder.attr("extUrl",extruder.metadata().url);
-					if (extruder.metadata().data) extruder.attr("extData",extruder.metadata().data);
+					if (extruder.metadata().data) extruder.attr("extData", extruder.metadata().data);
 				}
 
 				var flapFooter=$("<div class='footer'/>");
@@ -162,9 +162,10 @@ jQuery.browser.mobile = jQuery.browser.android || jQuery.browser.blackberry || j
 					wrapper.append(flap);
 				}
 
-				txt=extruder.attr("extTitle")?extruder.attr("extTitle"): "";
+				txt = extruder.attr("extTitle") ? extruder.attr("extTitle") : "";
 				var flapLabel = extruder.find(".flapLabel");
 				flapLabel.text(txt);
+              
 				if(isVertical){
 					flapLabel.html(txt).css({whiteSpace:"noWrap"});
 					var orientation= this.options.textOrientation == "tb";
